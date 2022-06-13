@@ -10,8 +10,6 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'var/lib/jenkins/workspace/Bazelexample/cpp-tutorial/stage1/main;bazel build ...'
-' 
-                
             }
         }
     }
