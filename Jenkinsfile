@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                sh 'Checkout scm'
+                 checkout scm
             }
         }
-        stage('Build') {
+        stage('Bazel build') {
             steps {
-                sh 'var/lib/jenkins/workspace/Declarative/cpp-tutorial/stage1/main; bazel build ...'
+                sh "var/lib/jenkins/workspace/Declarative/cpp-tutorial/stage1/main; bazel build ..."
             }
         }
         
