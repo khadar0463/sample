@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Bazel build') {
             steps {
-                sh "cd var/lib/jenkins/workspace/Declarative/cpp-tutorial/stage1/main; bazel build hello-world.cc"
+                sh "var/lib/jenkins/workspace/Declarative/cpp-tutorial/stage1/main; bazel build hello-world.cc"
             }
         }
         
