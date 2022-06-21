@@ -4,12 +4,18 @@ node {
 
 stage('Check-out') {
 echo 'From check-out stage'
+git branch: 'main', url: 'https://github.com/khadar0463/sample'
 }
 
 
 
 stage('Bazel Build') {
 echo 'From Bazel Build stage'
+	sh '''
+	pwd 
+	ls
+	cd cpp-tutorial/stage3
+	bazel build //main:hello-world
 }
 
 
