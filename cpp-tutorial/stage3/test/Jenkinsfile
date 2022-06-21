@@ -17,6 +17,7 @@ echo 'From Bazel Build stage'
 	cd cpp-tutorial/stage3
 	bazel build //main:hello-world
 	bazel-bin/main/hello-world
+	bazel build //lib:hello-time
 	'''
 }
 
