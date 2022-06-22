@@ -18,6 +18,7 @@ echo 'From Bazel Build stage'
 	bazel build //main:hello-world
 	bazel-bin/main/hello-world
 	bazel build //lib:hello-time
+	bazel build //main:hello-greet
 	'''
 }
 
