@@ -17,7 +17,6 @@ echo 'From Bazel Build stage'
 	cd cpp-tutorial/stage3
 	bazel build //main:hello-world
 	bazel-bin/main/hello-world
-	archiveArtifacts artifacts: 'cpp-tutorial/stage3/bazel-bin/main', followSymlinks: false
 	'''
 }
 
