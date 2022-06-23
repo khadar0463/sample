@@ -19,12 +19,6 @@ echo 'From Bazel Build stage'
 	bazel-bin/main/hello-world
 	'''
 }
-stage('Archive the Build') {
-echo 'Archive the Build'
-	sh '''
-	cd bazel-bin
-	archiveArtifacts artifacts: 'main/hello-world', followSymlinks: false
-	'''
 
 
 }
